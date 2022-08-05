@@ -5,7 +5,7 @@ import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 export default function Skills() {
@@ -51,51 +51,48 @@ export default function Skills() {
                 className="owl-carousel owl-theme skill-slider "
               >
                 <div className="item">
-                  <CircularProgressbar
+                  <CircularProgressbarWithChildren
                     className="progress-bar"
                     value={webPercent}
-                    strokeWidth={5}
+                    strokeWidth={10}
                     text={`${webPercent}%`}
-                    background
                     backgroundPadding={6}
                     styles={buildStyles({
                       backgroundColor: "none",
                       textColor: "#fff",
-                      pathColor: "#EF5B0C",
+                      pathColor: "#EC9B3B",
                       trailColor: "transparent",
                     })}
                   />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <CircularProgressbar
+                  <CircularProgressbarWithChildren
                     className="progress-bar"
                     value={computerVisPercent}
                     text={`${computerVisPercent}%`}
-                    strokeWidth={5}
-                    background
+                    strokeWidth={10}
                     backgroundPadding={6}
                     styles={buildStyles({
                       backgroundColor: "none",
                       textColor: "#fff",
-                      pathColor: "#D61C4E",
+                      pathColor: "#F24C4C",
                       trailColor: "transparent",
                     })}
                   />
                   <h5>Computer Vision</h5>
                 </div>
                 <div className="item">
-                  <CircularProgressbar
+                  <CircularProgressbarWithChildren
                     className="progress-bar"
                     value={mobilePercent}
                     text={`${mobilePercent}%`}
-                    strokeWidth={5}
-                    background
+                    strokeWidth={10}
                     backgroundPadding={6}
                     styles={buildStyles({
                       backgroundColor: "none",
                       textColor: "#fff",
-                      pathColor: "#FFF80A",
+                      pathColor: "#BDF2D5",
                       trailColor: "transparent",
                     })}
                   />
